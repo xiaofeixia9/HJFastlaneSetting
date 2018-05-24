@@ -18,6 +18,6 @@ platform :ios do
     build_app(export_method: "ad-hoc",
         workspace: ENV['FSVWORKSPACE'],
         scheme: ENV['FSVSCHEME'])
-    pgyer(api_key: ENV['FSVPGYER_API_KEY'], user_key: ENV['FSVPGYER_USER_KEY'])
+    pgyer(api_key: ENV['FSVPGYER_API_KEY'], user_key: ENV['FSVPGYER_USER_KEY'], update_description: ENV['FSVDESCRIPTION'])
 end
 end
